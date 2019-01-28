@@ -1,0 +1,24 @@
+﻿@model AspNetCoreMvc2.introduction.Model.EmployeeListViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index3</title>
+</head>
+<body>
+    @foreach (var item in Model.Employees)
+    {
+        @item.FirstName @item.LastName
+        <br />
+    }
+  
+
+
+</body>
+</html>
